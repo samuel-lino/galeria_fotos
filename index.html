@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de fotos</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .carousel-item img{
+            height: 80vh;
+        }
+        .carousel-inner button{
+            background-color: rgba(0,0,0,0.3);
+        }
+        .card{
+            padding: 12px;
+        }
+        .card-title{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header style="text-align: center;">
+            <h1>Galeria de fotos</h1>
+        </header>
+    </div>
+    <div class="container">
+        <h4 style="text-align: center;">Destaques</h4>
+        <div class="carousel slide" id="fotos-destaques">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#fotos-destaques" aria-current="true" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#fotos-destaques" aria-current="true" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#fotos-destaques" aria-current="true" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#fotos-destaques" aria-current="true" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#fotos-destaques" aria-current="true" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/8893/live/ac7e5c10-c12f-11ee-896d-39d9bd3cadbb.jpg.webp" alt="Arvore em um lago ao por do sol">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/fotos-gratis/linda-borboleta-na-natureza_23-2150445580.jpg" alt="borboleta asas abertas">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://static.vecteezy.com/ti/fotos-gratis/t1/13951373-incrivel-paisagem-natural-bela-cena-com-picos-de-alta-montanha-tatra-pedras-no-lago-de-montanha-agua-calma-do-lago-reflexao-ceu-colorido-por-do-sol-fundo-de-natureza-incrivel-caminhadas-de-aventura-de-outono-foto.jpg" alt="Rio ao por do sol">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://static.vecteezy.com/ti/fotos-gratis/t2/13951340-mar-indico-praia-por-do-sol-amanhecer-paisagem-outdoor-onda-de-agua-com-espuma-branca-lindo-ceu-colorido-por-do-sol-com-nuvens-fundo-panoramico-da-ilha-natural-costa-de-ilha-tropical-incrivel-idilica-foto.jpg" alt="por do sol na praia">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Quadro_da_natureza.jpg/1024px-Quadro_da_natureza.jpg" alt="cachoeira">
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#fotos-destaques" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" data-bs-target="#fotos-destaques" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>   
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxHHqF93uFREc8Q16oa-EoGo0-beijuHDSw&s" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ipê Amarelo</h5>
+                    </div>
+                    <div class="card-footer">Postado em <time datetime="">01/10/2024</time></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxHHqF93uFREc8Q16oa-EoGo0-beijuHDSw&s" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ipê Amarelo</h5>
+                    </div>
+                    <div class="card-footer">Postado em <time datetime="">01/10/2024</time></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxHHqF93uFREc8Q16oa-EoGo0-beijuHDSw&s" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ipê Amarelo</h5>
+                    </div>
+                    <div class="card-footer">Postado em <time datetime="">01/10/2024</time></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
